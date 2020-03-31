@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.blackburn.cs.cs212sp16.rekart.airoshambo.GameFXMLController">
+   <children>
+      <TextField fx:id="roundsPlayed" layoutX="226.0" layoutY="14.0" />
+      <TextField fx:id="aiWinsText" layoutX="14.0" layoutY="14.0" />
+      <TextField fx:id="aiWinsPercent" layoutX="14.0" layoutY="39.0" />
+      <TextField fx:id="humanWinsText" layoutX="437.0" layoutY="14.0" />
+      <TextField fx:id="humanWinsPercent" layoutX="437.0" layoutY="39.0" />
+      <TextField fx:id="tiesText" layoutX="226.0" layoutY="52.0" />
+      <TextField fx:id="tiesPercent" layoutX="226.0" layoutY="77.0" />
+      <TextField fx:id="humansMove" layoutX="14.0" layoutY="77.0" />
+      <TextField fx:id="aiMove" layoutX="437.0" layoutY="77.0" />
+      <Button layoutX="63.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleRock" text="Rock" />
+      <Button layoutX="274.0" layoutY="200.0" mnemonicParsing="false" onAction="#handlePaper" text="Paper" />
+      <Button layoutX="486.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleScissors" text="Scissors" />
+      <TextField fx:id="outcome" layoutX="226.0" layoutY="138.0" />
+   </children>
+</AnchorPane>
