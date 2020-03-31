@@ -1,0 +1,85 @@
+==25570== Memcheck, a memory error detector
+==25570== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==25570== Using Valgrind-3.12.0.SVN and LibVEX; rerun with -h for copyright info
+==25570== Command: ./baylorcode
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7F77D: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x108791: main (baylorcode.c:16)
+==25570== 
+==25570== Use of uninitialised value of size 8
+==25570==    at 0x4E7C16B: _itoa_word (_itoa.c:179)
+==25570==    by 0x4E80869: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x108791: main (baylorcode.c:16)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7C175: _itoa_word (_itoa.c:179)
+==25570==    by 0x4E80869: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x108791: main (baylorcode.c:16)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E80971: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x108791: main (baylorcode.c:16)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7F831: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x108791: main (baylorcode.c:16)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7F8B2: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x108791: main (baylorcode.c:16)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7F77D: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x1087B9: main (baylorcode.c:20)
+==25570== 
+==25570== Use of uninitialised value of size 8
+==25570==    at 0x4E7C16B: _itoa_word (_itoa.c:179)
+==25570==    by 0x4E80869: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x1087B9: main (baylorcode.c:20)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7C175: _itoa_word (_itoa.c:179)
+==25570==    by 0x4E80869: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x1087B9: main (baylorcode.c:20)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E80971: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x1087B9: main (baylorcode.c:20)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7F831: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x1087B9: main (baylorcode.c:20)
+==25570== 
+==25570== Conditional jump or move depends on uninitialised value(s)
+==25570==    at 0x4E7F8B2: vfprintf (vfprintf.c:1636)
+==25570==    by 0x4E871F8: printf (printf.c:33)
+==25570==    by 0x1087B9: main (baylorcode.c:20)
+==25570== 
+==25570== 
+==25570== HEAP SUMMARY:
+==25570==     in use at exit: 16 bytes in 1 blocks
+==25570==   total heap usage: 4 allocs, 3 frees, 1,071 bytes allocated
+==25570== 
+==25570== LEAK SUMMARY:
+==25570==    definitely lost: 16 bytes in 1 blocks
+==25570==    indirectly lost: 0 bytes in 0 blocks
+==25570==      possibly lost: 0 bytes in 0 blocks
+==25570==    still reachable: 0 bytes in 0 blocks
+==25570==         suppressed: 0 bytes in 0 blocks
+==25570== Rerun with --leak-check=full to see details of leaked memory
+==25570== 
+==25570== For counts of detected and suppressed errors, rerun with: -v
+==25570== Use --track-origins=yes to see where uninitialised values come from
+==25570== ERROR SUMMARY: 64 errors from 12 contexts (suppressed: 0 from 0)

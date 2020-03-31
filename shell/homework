@@ -1,0 +1,2 @@
+experiment iwth head,tail,less,more,cat, pipes, and stdout, stderr, redirecting stdout and stderr to filse
+you can find an active log file and use tail -f
